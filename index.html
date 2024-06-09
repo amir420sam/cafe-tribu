@@ -3,94 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burning Flag</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #333;
-    }
-
-    .flag-container {
-      position: relative;
-      width: 300px;
-      height: 200px;
-    }
-
-    .flag {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      transition: height 0.5s ease-in-out;
-    }
-
-    .flag-pole {
-      position: absolute;
-      width: 20px;
-      height: 100%;
-      background-color: #333;
-    }
-
-    .flag-body {
-      position: absolute;
-      width: 280px;
-      height: 180px;
-      left: 20px;
-      background-color: #008000;
-    }
-
-    .flag.burning .flag-body {
-      background: linear-gradient(to bottom, #ff0000, #ffa500, #ffff00);
-      animation: burning 1s linear infinite;
-    }
-
-    @keyframes burning {
-      0% {
-        background-position: 0% 0%;
-      }
-      100% {
-        background-position: 100% 100%;
-      }
-    }
-  </style>
+  <title>Café Tribu - Win a Free Meal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="flag-container">
-    <div class="flag" id="flag">
-      <div class="flag-pole"></div>
-      <div class="flag-body"></div>
-    </div>
-  </div>
+  <header>
+    <h1>Café Tribu</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <script>
-    const flag = document.getElementById('flag');
-    let isOnFire = false;
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Win a Free Meal at Café Tribu</h2>
+        <p>Enter your name and contact information for a chance to win a free meal at our cozy Persian-inspired café.</p>
+        <form id="win-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
 
-    flag.addEventListener('click', () => {
-      if (!isOnFire) {
-        startBurning();
-      }
-    });
+          <label for="contact">Phone or Email:</label>
+          <input type="text" id="contact" name="contact" required>
 
-    function startBurning() {
-      isOnFire = true;
-      flag.classList.add('burning');
+          <button type="submit">Enter to Win</button>
+        </form>
+      </div>
+      <div class="hero-image">
+        <img src="https://i.imgur.com/xnMBrQQ.jpg" alt="Persian Art">
+      </div>
+    </section>
 
-      let flameHeight = 0;
-      const flameBurnInterval = setInterval(() => {
-        flameHeight += 2;
-        flag.style.height = `${200 + flameHeight}px`;
+    <section class="gallery">
+      <h2>Explore Our Persian-Inspired Art</h2>
+      <div class="gallery-images">
+        <img src="https://i.imgur.com/VEgIIzJ.jpg" alt="Persian Art">
+        <img src="https://i.imgur.com/QUcW8w0.jpg" alt="Persian Art">
+        <img src="https://i.imgur.com/W5EEaLY.jpg" alt="Persian Art">
+        <img src="https://i.imgur.com/cSB2lPZ.jpg" alt="Persian Art">
+      </div>
+    </section>
+  </main>
 
-        if (flameHeight >= 100) {
-          clearInterval(flameBurnInterval);
-        }
-      }, 50);
-    }
-  </script>
+  <footer>
+    <p>&copy; 2023 Café Tribu. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

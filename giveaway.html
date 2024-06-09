@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Tribu Giveaway</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="giveaway.html">Giveaway</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Café Tribu Giveaway</h1>
+      <p>Enter for a chance to win a free meal for two!</p>
+    </section>
+
+    <section class="giveaway-content">
+      <h2>About the Giveaway</h2>
+      <p>We're excited to offer our customers a chance to win a free meal for two at Café Tribu. To enter, simply fill out the form below with your contact information. The winner will be randomly selected and notified by email.</p>
+
+      <h2>Entry Form</h2>
+      <form action="submit-giveaway.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Enter</button>
+      </form>
+
+      <h2>Terms and Conditions</h2>
+      <p>By entering the Café Tribu Giveaway, you agree to the following terms and conditions:</p>
+      <ul>
+        <li>The giveaway is open to residents of the continental United States who are 18 years of age or older.</li>
+        <li>Only one entry per person is allowed.</li>
+        <li>The winner will be selected at random and notified by email within 7 days of the giveaway closing date.</li>
+        <li>The prize consists of a free meal for two at Café Tribu, including one appetizer, two entrees, and one dessert.</li>
+        <li>The prize must be redeemed within 30 days of the winner being notified.</li>
+        <li>Café Tribu reserves the right to modify or cancel the giveaway at any time.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Café Tribu. All rights reserved.</p>
+  </footer>
+</body>
+</html>

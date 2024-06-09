@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Café Tribu - Persian and Turkish Inspired Cuisine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Header Styles */
+    header {
+      background-image: linear-gradient(to right, #b7094c, #7b1fa2);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    header nav ul li {
+      margin: 0 1rem;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+      color: #ccc;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 2rem;
+    }
+
+    .hero {
+      background-image: url('https://example.com/persian-painting-1.jpg'), url('https://example.com/turkish-painting-1.jpg');
+      background-size: cover, cover;
+      background-position: left top, right bottom;
+      background-repeat: no-repeat, no-repeat;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Café Tribu</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="giveaway.html">Giveaway</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Discover the Flavors of Persia and Turkey</h2>
+      <p>Experience our authentic and delicious cuisine at Café Tribu.</p>
+      <a href="giveaway.html"><button>Enter to Win a Free Meal</button></a>
+    </section>
+
+    <section>
+      <h2>About Café Tribu</h2>
+      <p>Café Tribu is a cozy and inviting restaurant that brings the flavors of Persia and Turkey to your table. Our menu features a variety of traditional dishes, including kebabs, mezzes, and desserts, all crafted with the freshest ingredients and the finest spices.</p>
+      <a href="about.html">Learn More</a>
+    </section>
+
+    <section>
+      <h2>Our Menu</h2>
+      <p>Explore our diverse menu and discover the rich culinary heritage of the Middle East.</p>
+      <a href="menu.html">View Menu</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Café Tribu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+<!-- giveaway.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Café Tribu Giveaway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Giveaway Page Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      background-image: url('https://example.com/persian-painting-2.jpg'), url('https://example.com/turkish-painting-2.jpg');
+      background-size: cover, cover;
+      background-position: left top, right bottom;
+      background-repeat: no-repeat, no-repeat;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      color: #333;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
